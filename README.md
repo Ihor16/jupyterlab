@@ -18,4 +18,4 @@ This image is built off of the [continuumio/miniconda3](https://hub.docker.com/r
 The Jupyter Lab working directory is set to `/opt/notebooks`, 
 so volumes should be mounted there to be accessible via the container's Jupyter Lab.
 
-The port exposed is `8888`. When the container is run, users need to copy the URL that looks like `http://127.0.0.1:8888/lab?token=d9704724bf0267d3d9262698ffbb88123633f8c8f4b1a305` into their web browser to access Jupyter Lab.
+The port exposed is `8889`. When the container is run, users need to copy the URL that looks like `http://127.0.0.1:8889/lab?token=d9704724bf0267d3d9262698ffbb88123633f8c8f4b1a305` into their web browser to access Jupyter Lab
