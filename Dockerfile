@@ -40,8 +40,8 @@ RUN conda install -c conda-forge -y \
 
 # GitHub packages installation is taken from:
 # https://github.com/UBC-STAT/stat-201/blob/master/dockerfiles/r-stat-201/Dockerfile
-#RUN Rscript -e "devtools::install_github('UBC-MDS/datateachr@v0.2.1')" \
-    #&& Rscript -e "devtools::install_github('UBC-MDS/taxyvr@0.1.0')"
+RUN Rscript -e "devtools::install_github('UBC-MDS/datateachr@v0.2.1')" \
+    && Rscript -e "devtools::install_github('UBC-MDS/taxyvr@0.1.0')"
 
 # Copy JupyterLab start-up script into container
 COPY start-notebook.sh /usr/local/bin/
