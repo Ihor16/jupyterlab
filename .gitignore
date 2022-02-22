@@ -3,6 +3,3 @@ files/*
 
 ssh/*
 !ssh/.gitkeep
-
-config/*
-!config/jupyter_server_config.py
