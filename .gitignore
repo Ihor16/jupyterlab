@@ -3,3 +3,6 @@ files/*
 
 ssh/*
 !ssh/.gitkeep
+
+*.swp
+
