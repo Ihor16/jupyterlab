@@ -70,6 +70,13 @@
 #------------------------------------------------------------------------------
 # ServerApp(JupyterApp) configuration
 #------------------------------------------------------------------------------
+
+# Taken from https://stackoverflow.com/a/51249778/18184038
+# setting up the password
+from IPython.lib import passwd
+password = passwd("jlab")
+c.ServerApp.password = password
+
 ## Set the Access-Control-Allow-Credentials: true header
 #  Default: False
 # c.ServerApp.allow_credentials = False
@@ -1540,14 +1547,3 @@
 #  inactive timeout value.
 #  Default: 300
 # c.TerminalManager.cull_interval = 300
-
-# my notebooks settings
-c = get_config()
-c.ServerApp.ip = '*'
-c.ServerApp.open_browser = False
-c.ServerApp.port = 8889
-
-# setting up the password
-from IPython.lib import passwd
-password = passwd("jlab")
-c.ServerApp.password = password
