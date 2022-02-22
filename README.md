@@ -24,6 +24,7 @@ Simple single-user container image that has:
   The `./ssh/` directory is going to be mounted to the container, so you can put this public key to your GitHub list of SSH keys. If the container restarts, the same key is going to be mounted there, so you don't need to update your GitHub SSH list. 
 
 - **Change default password**
+  
   You can change your Jupyter Lab password by editing a line in the `./config/jupyter_server_config.py` file that says 
   
   ```
@@ -32,7 +33,7 @@ Simple single-user container image that has:
   
   Change `jlab` to your preferred password and you'll be prompted to enter it when you try to access the Jupyter Lab.
   
-  If you want to change the password after starting the Jupyter Lab, just edit this file and shutdown the Jupyter Lab from the GUI. It will automatically restart the container and apply the updated password.
+  If you want to change the password after starting the Jupyter Lab, just edit this file and shutdown the Jupyter Lab from the GUI. If you're running on Swarm, it will automatically restart the container and apply the updated password. If you're running locally, you have to manually remove the container and run the `compose up` again.
 
 ## How to run:
 
