@@ -73,7 +73,7 @@ The contents of the `./files/` are mounted to the container's working directory,
   
   to authenticate the host.
   
-  If it still doesn't work, make sure you added the SSH key to your GitHub list.
+  If it still doesn't work, make sure you generated the SSH key and added it to your GitHub list.
 
 ## Attribution
 
