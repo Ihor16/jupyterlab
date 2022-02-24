@@ -7,7 +7,7 @@ services:
       - "8889:8889"
     volumes:
       - ./files:/opt/notebooks
-      - ./config/jupyter_server_config.py:/root/.jupyter/jupyter_server_config.py:ro
       - ./ssh/:/root/.ssh
+      - ./config/jupyter_server_config.py:/root/.jupyter/jupyter_server_config.py:ro
 
 
