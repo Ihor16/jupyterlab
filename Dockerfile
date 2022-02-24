@@ -43,6 +43,12 @@ RUN conda install -c conda-forge -y \
 RUN Rscript -e "devtools::install_github('UBC-MDS/datateachr@v0.2.1')" \
     && Rscript -e "devtools::install_github('UBC-MDS/taxyvr@0.1.0')"
 
+# Installing spellcheck extension
+# https://github.com/jupyterlab-contrib/spellchecker
+RUN conda install -c conda-forge -y \
+    nodejs \
+    jupyterlab-spellchecker
+
 # Copy JupyterLab start-up script into container
 COPY start-notebook.sh /usr/local/bin/
 

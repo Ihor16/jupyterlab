@@ -2,10 +2,12 @@
 
 Simple single-user container image that has:
 
-- Jupyter Lab (including Jupyter Lab Git UI)
+- Jupyter Lab
+  * Jupyter Lab Git UI
+  * Spell checker
 - Minconda Python distribution (including Conda)
 - R and IRkernel
-- Some common R packages (read the Dockerfile to see the list)
+  - Some common R packages (read the Dockerfile to see the list)
 
 ## Before you run
 
