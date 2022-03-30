@@ -49,12 +49,18 @@ RUN conda install -c conda-forge -y \
     nodejs \
     jupyterlab-spellchecker
 
+# Create a new user
+RUN useradd -ms /bin/bash jlab
+
 # Copy JupyterLab start-up script into container
 COPY start-notebook.sh /usr/local/bin/
+
+# Switch to a new user
+USER jlab
 
 # Change permission of startup script and execute it
 RUN chmod +x /usr/local/bin/start-notebook.sh
 CMD ["/usr/local/bin/start-notebook.sh"]
 
 # Switch to starting in directory where volumes will be mounted
-WORKDIR "/opt/notebooks"
+WORKDIR "/home/jlab/notebooks"
