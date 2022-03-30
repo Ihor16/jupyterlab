@@ -2,12 +2,12 @@ version: "3.8"
 
 services:
   jlab:
-    image: ihor16/r-jupyterlab
+    image: ihor16/r-jupyterlab2
     ports:
       - "8889:8889"
     volumes:
-      - ./files:/opt/notebooks
-      - ./ssh/:/root/.ssh
-      - ./config/jupyter_server_config.py:/root/.jupyter/jupyter_server_config.py:ro
+      - ./files:/home/jlab/notebooks
+      - ./ssh/:/home/jlab/.ssh
+      - ./config/jupyter_server_config.py:/home/jlab/.jupyter/jupyter_server_config.py:ro
 
 
