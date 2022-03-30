@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   jlab:
-    image: ihor16/r-jupyterlab2
+    image: ihor16/r-jupyterlab
     ports:
       - "8889:8889"
     volumes:
