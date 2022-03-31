@@ -29,7 +29,7 @@ Simple single-user container image that has:
   
   You can change your Jupyter Lab password by editing a line in the `./config/jupyter_server_config.py` file that says 
   
-  ```
+  ```python
   password = passwd("jlab")
   ```
   
@@ -37,7 +37,7 @@ Simple single-user container image that has:
   
   If you want to change the password after starting the Jupyter Lab, just edit this file and shutdown the Jupyter Lab from the GUI. If you're running on Swarm, it will automatically restart the container and apply the updated password. If you're running locally, you have to manually remove the container and run the `compose up` again.
 
-## How to run:
+## How to run
 
 #### Locally:
 
