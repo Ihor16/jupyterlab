@@ -1,0 +1,7 @@
+services:
+  jlab:
+    image: ubcdsci/r-stat-301
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./materials/:/home/jovyan/mounted-files
