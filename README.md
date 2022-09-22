@@ -2,7 +2,7 @@
 A script for starting a local instance of Jupyter Lab in a Docker container.
 
 ### Startup
-1. Run `run.sh` to start Jupyter Lab
+1. Run `run.sh` to start Jupyter Lab. Then use the printed link to access Jupyter from the browser
 2. Put some files to the `materials/` directory. They'll be available in Jupyter, so you can work on them there
 
 ### Shutdown
