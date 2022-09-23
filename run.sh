@@ -14,3 +14,5 @@ printf "\n=== Use the link below to access it:\n"
 docker container logs $name
 
 printf "\n=== Done ===\n"
+
+read -r
