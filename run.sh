@@ -11,7 +11,7 @@ until [[ $(docker container logs $name 2>&1) == *"http:"* ]]; do
 done
 
 printf "\n=== Use the link below to access it:\n"
-docker container logs $name
+docker container logs $name 2>&1 | grep "http://1"
 
 printf "\n=== Done ===\n"
 
