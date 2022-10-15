@@ -1,5 +1,5 @@
 # JupyterLab Docker Container
-This repository contains scrips for starting JupyterLab in Docker
+This repository contains scrips for starting JupyterLab in Docker.
 The scripts are optimized for UBC DSCI and STAT working environments
 
 ### Startup
