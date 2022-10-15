@@ -1,6 +1,12 @@
+# Builds the local image if it's not present,
+# then starts the container
 services:
   jlab:
-    image: ubcdsci/r-stat-301
+    image: "${image}:${tag}"
+    build:
+      context: .
+      args:
+        image: "${image}"
     ports:
       - "8888:8888"
     volumes:
