@@ -8,6 +8,7 @@ The scripts are optimized for UBC DSCI and STAT working environments.
 
 ### Shutdown
 1. Run `uninstall.sh` to stop the local JupyterLab
+
 After you close Jupyter, the files you put in the `materials/` directory are saved there
 
 ### Additional features
