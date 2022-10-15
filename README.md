@@ -1,6 +1,6 @@
 # JupyterLab Docker Container
 This repository contains scrips for starting JupyterLab in Docker.
-The scripts are optimized for UBC DSCI and STAT working environments
+The scripts are optimized for UBC DSCI and STAT working environments.
 
 ### Startup
 1. Run `run.sh` to start JupyterLab. Then use the printed link to access Jupyter from the browser
