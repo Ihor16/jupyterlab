@@ -40,6 +40,7 @@ The JupyterLab image is based on the official UBC Docker images, but has some ad
    # change <container-name> to your container
    docker container exec <container-name> bash -c 'echo $HOME'
    ```
+2. If there are no files in JupyterLab after you add them to the `materials/` directory, check the path to the container's `$HOME` directory in the `docker-compose.yaml` file under `volumes` using the steps above.
 
 ### Attributions
 
