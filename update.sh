@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: updates the local image
+# Description: updates the local image specified in the .env file
 # Usage: ./update.sh
 
 # Loading variables from .env file
